@@ -24,4 +24,20 @@ img{
 	align-items:center;
 	width:90%;
 }
-`
+@media(max-width:800px){
+	img{
+		height:40vh;
+	}
+	.image-text{
+	font-size:.7rem;
+	}
+}
+@media(max-width:500px){
+	img{
+		height:30vh;
+	}
+	.image-text{
+		font-size:.6rem;
+	}
+}
+`;
