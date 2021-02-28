@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import {QuoteGeneratorStyle} from "./Quote-Generator-Style";
 
 let quotes = [
     {quote:"What, so everyone’s supposed to sleep every single night now? You realize that nighttime makes up half of all time?", speaker:"Rick"}
@@ -30,7 +31,7 @@ function QuoteGenerator(){
       setQuote(quotes[randomNum]);
     };
     return (
-      <div>
+      <QuoteGeneratorStyle>
         <div className="page-top">
           <h1>Quote Generator</h1>
           <p>
@@ -46,7 +47,7 @@ function QuoteGenerator(){
             <button onClick={buttonHandle}>New Quote</button>
           </div>
         </div>
-      </div>
+      </QuoteGeneratorStyle>
     );
 }
 export default QuoteGenerator;
