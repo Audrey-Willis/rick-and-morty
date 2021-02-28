@@ -1,16 +1,17 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {NavStyle} from "./Nav-Style";
 
 
 function Nav(){
     return (
-      <div>
+      <NavStyle>
         <nav>
           <Link to= "/"> Home </Link>
           <Link to= "/Characters">Characters</Link>
           <Link to="/QuoteGenerator">Quote Generator </Link>
         </nav>
-      </div>
+      </NavStyle>
     );
 }
 
