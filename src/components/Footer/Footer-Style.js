@@ -5,6 +5,7 @@ export const FooterStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align:center;
   margin: 2% 0% 2% 0%;
   a {
     color: green;
