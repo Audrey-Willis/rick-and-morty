@@ -7,9 +7,6 @@ function CharacterContainer(props) {
       <h3>{props.result.name}</h3>
       <img src={props.result.image} alt={props.result.name} />
       <div className="extra-character-info">
-        <h3>{props.result.name}</h3>
-        <img src={props.result.image} alt={props.result.name} />
-        <div className="extra-character-info">
           <button
             onClick={(event) => {
               event.preventDefault();
@@ -30,7 +27,6 @@ function CharacterContainer(props) {
           </div>
         )}
       </div>
-    </div>
   );
 }
 export default CharacterContainer;
