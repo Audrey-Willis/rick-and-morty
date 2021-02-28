@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import CharacterContainer from '../Character-Container/Character-Container';
 import axios from "axios";
+import {CharacterDataStyle} from "./Character-Data-Style"
+
+
+
 function CharacterPage() {
   const [url] = useState(`https://rickandmortyapi.com/api/character/`);
   const [Characters, setCharacters] = useState({});
@@ -39,7 +43,7 @@ function CharacterPage() {
     }
   };
   return (
-    <div>
+    <CharacterDataStyle>
       <div className="character-page-top">
         <h1>Character List</h1>
         <p>
@@ -86,7 +90,7 @@ function CharacterPage() {
           <button onClick={(event) => nextHandler(event)}>Next</button>
         </div>
       </div>
-    </div>
+    </CharacterDataStyle>
   );
 }
 
