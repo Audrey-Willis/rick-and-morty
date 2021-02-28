@@ -1,8 +1,13 @@
 import React, {useState} from "react";
+import {CharacterContainerStyle} from "./Character-Container-Style"
+
+
+
 function CharacterContainer(props) {
   const [displayToggle, setDisplayToggle] = useState(false);
 
   return (
+    <CharacterContainerStyle>
     <div className="character-cards">
       <h3>{props.result.name}</h3>
       <img src={props.result.image} alt={props.result.name} />
@@ -13,7 +18,6 @@ function CharacterContainer(props) {
               setDisplayToggle(!displayToggle);
             }}
           >
-            {" "}
             More info
           </button>
         </div>
@@ -27,6 +31,8 @@ function CharacterContainer(props) {
           </div>
         )}
       </div>
+      </div>
+    </CharacterContainerStyle>
   );
 }
 export default CharacterContainer;
