@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter as Router,Route, BrowserRouter} from "react-router-dom";
+import LandingPage from './components/Landing-Page/Landing-Page';
+import CharacterPage from './components/Character-Page/Character-Container/Character-Container';
+import QuoteGenerator from './components/Quote-Generator/Quote-Generator';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <Header />
+        <Route exact path = "/" component={LandingPage} />
+        <Route path="/Characters"component={CharacterPage} />
+        <Route path= "/QuoteGenerator" component={QuoteGenerator} />
+        <Footer />
+      </BrowserRouter>
   );
 }
 
