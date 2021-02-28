@@ -1,17 +1,22 @@
 import React, {useState} from "react";
+function CharacterContainer(props) {
+  const [displayToggle, setDisplayToggle] = useState(false);
 
-function CharacterContainer(props){
-    	const [displayToggle, setDisplayToggle] = useState(false);
-
-    return (
-      <div className="character-cards">
+  return (
+    <div className="character-cards">
+      <h3>{props.result.name}</h3>
+      <img src={props.result.image} alt={props.result.name} />
+      <div className="extra-character-info">
         <h3>{props.result.name}</h3>
-        <img src={props.result.image} alt={props.result.name}/>
+        <img src={props.result.image} alt={props.result.name} />
         <div className="extra-character-info">
           <button
             onClick={(event) => {
               event.preventDefault();
-              setDisplayToggle(!displayToggle);}}>
+              setDisplayToggle(!displayToggle);
+            }}
+          >
+            {" "}
             More info
           </button>
         </div>
@@ -25,6 +30,7 @@ function CharacterContainer(props){
           </div>
         )}
       </div>
-    );
+    </div>
+  );
 }
 export default CharacterContainer;
