@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {LandingPageStyle} from "./Landing-Page-Style"
 
 function LandingPage(){
 return (
-  <div>
+  <LandingPageStyle>
     <div className="landing-page-about">
       <h2> Welcome to All Fellow Multi-Dimensional Adventurers!</h2>
       <p>
@@ -32,7 +33,7 @@ return (
         <Link to="/QuoteGenerator">Quotes</Link>
       </div>
     </div>
-  </div>
+  </LandingPageStyle>
 );
 } 
-export default LandingPage
+export default LandingPage;
