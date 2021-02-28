@@ -31,7 +31,6 @@ function CharacterContainer(props) {
           </div>
         )}
       </div>
-      </div>
     </CharacterContainerStyle>
   );
 }
