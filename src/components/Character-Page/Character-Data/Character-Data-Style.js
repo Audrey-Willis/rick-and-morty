@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CharacterPageStyle = styled.div`
+export const CharacterDataStyle = styled.div`
   .characters {
     display: flex;
     flex-wrap: wrap;
