@@ -12,7 +12,7 @@ function App() {
   return (
       <BrowserRouter>
         <Header />
-        <Route exact path = "/" component={LandingPage} />
+        <Route exact path = "/rick-and-morty" component={LandingPage} />
         <Route path="/Characters"component={CharacterData} />
         <Route path= "/QuoteGenerator" component={QuoteGenerator} />
         <Footer />
