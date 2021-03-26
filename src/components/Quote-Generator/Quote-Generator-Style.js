@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const QuoteGeneratorStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  color: gold;
-  text-align: center;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gold;
+    text-align: center;
 
   .page-top {
     width: 80%;
     margin-bottom: 5%;
     color: antiquewhite;
+    font-size:1.5rem;
   }
   .quoteSection {
     display: flex;
@@ -23,6 +23,7 @@ export const QuoteGeneratorStyle = styled.div`
     width: 75%;
     background-color: sandybrown;
     border: 5px solid gold;
+    font-size:1.5rem;
   }
   button {
     background-color: sandybrown;
@@ -38,9 +39,25 @@ export const QuoteGeneratorStyle = styled.div`
     font-size: 1.5rem;
   }
   @media (max-width: 800px) {
-    font-size: 0.9rem;
+  .page-top h1{
+    font-size:1.3rem;
+  }
+  .page-top p{
+    font-size:1rem;
+  }
+  .insideQuoteSection{
+    font-size:1rem;
+  }
   }
   @media (max-width: 500px) {
-    font-size: 0.8rem;
+  .page-top h1{
+    font-size:1rem;
+  }
+  .page-top p{
+    font-size:1rem;
+  }
+  .insideQuoteSection{
+    font-size:1rem;
+  }
   }
 `;

@@ -7,10 +7,31 @@ export const FooterStyle = styled.div`
   align-items: center;
   text-align:center;
   margin: 2% 0% 2% 0%;
+  margin-bottom:20%;
   a {
     color: green;
+    font-size:1.5rem;
   }
   a:hover {
-    font-size: 1.2rem;
+    transform:scale(1.1);
+  }
+  h4{
+    font-size:1.5rem;
+  }
+  @media(max-width:800px){
+  h4{
+    font-size:1.2rem;
+  }
+  a{
+    font-size:1.2rem;
+  }
+  }
+  @media(max-width:500px){
+  a{
+    font-size:1.2rem;
+  }
+  h4{
+    font-size:1rem;
+  }
   }
 `;

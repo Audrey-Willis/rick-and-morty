@@ -52,8 +52,8 @@ function CharacterPage() {
           bottom of each character to see more information about them. Browse
           through the entire list and spend some time familiarizing yourself
           with all the interesting beings that make up the Rick and Morty
-          Multiverse. Or, if browsing isn't for you, use our search bar to find
-          your favorite characters!.
+          multiverse. Or, if browsing isn't for you, use our search bar to find
+          your favorite characters!
         </p>
       </div>
       <div className="searchAndPageButton">
